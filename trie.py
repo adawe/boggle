@@ -12,5 +12,5 @@ class Trie(dict):
         if not word:
             return
         if word[0] not in subtree:
-            subtree[word[0]] = {}
-        self.__recurse_add_word(word[1:], subtree[word[0]])
+            subtree[word[0]] = [(len(word) == 1), {}]
+        self.__recurse_add_word(word[1:], subtree[word[0]][1])
