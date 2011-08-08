@@ -30,4 +30,3 @@ trie = Trie()
 for word in words:
     trie.add_word(word)
 
-
